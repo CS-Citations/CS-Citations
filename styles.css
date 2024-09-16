@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.yantramanav-thin,h2 {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.yantramanav-regular,h1,h3 {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.open-sans,h4 {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+:root{
+	--darc:#070809;
+	--lite:#d7e8fb;
+	--sec:#554d5e;
+	--acc:#6db0f9;
+}
+
+
+body{
+	padding-left:10px;
+	padding-right:10px;
+	margin:0;
+	background-color:var(--darc);
+	color:var(--lite);
+}
+
+
+body::-webkit-scrollbar {
+  width: 5px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--darc);        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--lite);      
+  border-radius: 5px;       
+}
+
+
+
+h1{
+	font-size:64px;
+	background: -webkit-linear-gradient(var(--lite),var(--acc),var(--acc));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+h2{
+	font-size:42px;
+	width:fit-content;
+	background: -webkit-linear-gradient(var(--lite),var(--lite),var(--acc));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+h3{
+	font-size:24px;
+}
+
+h4{
+	font-size:16px;
+	padding-left:50px;
+}
+
+a{
+	display: block;
+	color:var(--lite);
+	max-width:fit-content;
+}
+
+.video{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding:0;
+	margin:0;
+}
+.row{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+}
+
+
+@media only screen and (max-width: 450px) {
+	.row>h2{
+		font-size:64px !important;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.row{
+		flex-direction:column;
+	}
+	.row>img{
+		margin-left:0px !important;
+		margin-right:0px !important;
+	}
+
+	.row>iframe{
+		width:80vw !important;
+		height:40vw !important;
+		margin-top:50px;
+	}
+	
+	.video>iframe{
+		width:80vw !important;
+		height:45vw !important;
+	}
+
+	section{
+		margin-left:15px !important;
+	}
+	h1{
+		font-size:42px;
+	}
+
+	h2{
+		font-size:34px;
+	}
+	
+	h3{
+		font-size:20px;
+	}
+	
+	h4{
+		padding-left:10px;
+	}
+	ul{
+		padding-left:0px;
+	}
+
+}
