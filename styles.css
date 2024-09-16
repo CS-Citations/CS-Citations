@@ -60,17 +60,17 @@ body::-webkit-scrollbar-thumb {
 
 h1{
 	font-size:64px;
-	background: -webkit-linear-gradient(var(--lite),var(--acc),var(--acc));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	background: -webkit-linear-gradient(var(--lite),var(--lite),var(--acc));
+	color: transparent;
+	background-clip: text;
 }
 
 h2{
 	font-size:42px;
 	width:fit-content;
 	background: -webkit-linear-gradient(var(--lite),var(--lite),var(--acc));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: transparent;
+	background-clip: text;
 }
 
 h3{
