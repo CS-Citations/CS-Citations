@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+
 .yantramanav-thin,h2 {
   font-family: "Yantramanav", sans-serif;
   font-weight: 100;
@@ -24,6 +25,8 @@
 
 
 :root{
+	color-scheme: light only;
+	
 	--darc:#070809;
 	--lite:#d7e8fb;
 	--sec:#554d5e;
