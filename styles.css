@@ -92,6 +92,13 @@ a{
 	justify-content:center;
 }
 
+.divide{
+	display:flex;
+	flex-direction:row-reverse;
+	align-items:center;
+	width:100;
+	justify-content:space-between;
+}
 
 .example{ 
 	padding:10px 50px 10px 0px; 
