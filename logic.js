@@ -65,15 +65,24 @@ function update_theme() {
   	}
 
 	if (theme=="light"){
-		document.querySelector(':root').style.setProperty('--darc', '#D8D9DA');
-		document.querySelector(':root').style.setProperty('--lite', '#272829');
+		document.querySelector(':root').style.setProperty('--darc', '#F3F3F3');
+		document.querySelector(':root').style.setProperty('--lite', '#303841');
+		document.querySelector(':root').style.setProperty('--sec', '#3A4750');
+		document.querySelector(':root').style.setProperty('--acc', '#2185D5');
+		
 		document.getElementById("theme-icon").style.setProperty('filter','invert(0%)');
+		document.getElementById("home-icon").style.setProperty('filter','invert(0%)');
 		
 	}
 	else{
 		document.querySelector(':root').style.setProperty('--darc', '#272829');
 		document.querySelector(':root').style.setProperty('--lite', '#D8D9DA');
+		document.querySelector(':root').style.setProperty('--sec', '#61677A');
+		document.querySelector(':root').style.setProperty('--acc', '#FFF6E0');
+		
+
 		document.getElementById("theme-icon").style.setProperty('filter','invert(100%)');
+		document.getElementById("home-icon").style.setProperty('filter','invert(100%)');
 	}
 	console.log(getCookie("theme"));
 }

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
 
 .yantramanav-thin,h2 {
   font-family: "Yantramanav", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -22,10 +22,10 @@
 }
 
 :root{
-	--darc:#272829;
-	--lite:#D8D9DA;
-	--sec:#61677A;
-	--acc:#FFF6E0;
+	--darc:#F3F3F3;
+	--lite:#303841;
+	--sec:#3A4750;
+	--acc:#2185D5;
 }
 
 
@@ -55,12 +55,13 @@ body::-webkit-scrollbar-thumb {
 
 h1{
 	font-size:64px;
-
+	color:var(--acc);
 }
 
 h2{
 	font-size:42px;
 	width:fit-content;
+	color:var(--acc);
 }
 
 h3{
