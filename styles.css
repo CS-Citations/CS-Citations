@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
 
 .yantramanav-thin,h2 {
   font-family: "Yantramanav", sans-serif;
@@ -8,29 +7,25 @@
   font-style: normal;
 }
 
-.yantramanav-regular,h1,h3 {
+.yantramanav-regular,h4 {
   font-family: "Yantramanav", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.open-sans,h4 {
-  font-family: "Open Sans", sans-serif;
+
+.assistant,h3,h1 {
+  font-family: "Assistant", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 
-
 :root{
-	color-scheme: light only;
-	
-	--darc:#070809;
-	--lite:#d7e8fb;
-	--sec:#554d5e;
-	--acc:#6db0f9;
+	--darc:#272829;
+	--lite:#D8D9DA;
+	--sec:#61677A;
+	--acc:#FFF6E0;
 }
 
 
@@ -60,17 +55,12 @@ body::-webkit-scrollbar-thumb {
 
 h1{
 	font-size:64px;
-	background: -webkit-linear-gradient(var(--lite),var(--lite),var(--acc));
-	color: transparent;
-	background-clip: text;
+
 }
 
 h2{
 	font-size:42px;
 	width:fit-content;
-	background: -webkit-linear-gradient(var(--lite),var(--lite),var(--acc));
-	color: transparent;
-	background-clip: text;
 }
 
 h3{
@@ -103,6 +93,16 @@ a{
 }
 
 
+.example{ 
+	padding:10px 50px 10px 0px; 
+	margin-bottom:50px;
+	border-radius:25px; 
+	border:1px solid var(--lite); 
+	max-width:fit-content;
+}
+
+
+
 @media only screen and (max-width: 450px) {
 	.row>h2{
 		font-size:64px !important;
@@ -128,6 +128,11 @@ a{
 		width:80vw !important;
 		height:45vw !important;
 	}
+
+	.example>h4{
+		text-align: justify;
+	}
+	
 
 	section{
 		margin-left:15px !important;
