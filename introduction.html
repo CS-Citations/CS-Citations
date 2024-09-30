@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introduction to CS</title>
+	<link rel="stylesheet" href="styles.css">	
+	<script defer src="logic.js"></script>
+	<link rel="icon" type="image/png" href="res/logo.png">
+  </head>
+	
+  <body>
+	<div class="divide">
+		<img id="theme-icon" style="margin-top:10px; width:25px; height:25px; filter: invert(100%);" src="res/theme.png" onclick="switch_theme()">
+		<a href="index.html"><img id="home-icon" style="margin-top:10px; width:25px; height:25px; filter: invert(100%);" src="res/home.png"></a>
+	</div>
+
+	<div class="row">
+		<h1>Computer Science</h1>
+	</div>
+
+
+	<h4>In order for you to write programs to control a computer, you should first know how a computer works,<br> As it will make a lot of things easier for you.</h4>
+
+
+	<section style="margin-left:50px;">
+
+		<hr style="margin-top:100px;">
+		<h2>1) Programming in it's essence</h2>
+		<h3>Programming is the process of planning, designing, and writing a set of instructions for a computer to execute.</h3>
+		<h3>There are primarily only 4 kinds of instructions that a computer can perform :</h3>
+		<ol>
+			<li><h4 style="padding:0;">Reading data from Memory.</h4></li>
+			<li><h4 style="padding:0;">Comparing 2 or more values.</h4></li>
+			<li><h4 style="padding:0;">Performing Mathematical operations on 1 or more values.</h4></li>
+			<li><h4 style="padding:0;">Writing data to Memory.</h4></li>
+		</ol>
+		<h3>And that's it,<br>Every operation in a computer is a combination of these 4 instructions.</h3>
+
+
+
+		
+		<hr style="margin-top:100px;">
+		<h2>2) Components of a Computer</h2>
+		<h3>Computers consist of a number of components, all working together to form a logical machine.</h3>
+		<h3>As a programmer, there are only 3 parts that you should keep in mind :</h3>
+		<ol>
+			<li><h4 style="padding:0;">CPU</h4></li>
+			<li><h4 style="padding:0;">Memory</h4></li>
+			<li><h4 style="padding:0;">I/O Devices</h4></li>
+		</ol>
+		<h3>The Central Processing Unit performs the computations and calculations.
+		<br>Memory stores the Data & Instructions for the CPU.
+		<br>I/O devices allow the user to send and receive data from Memory and view them.</h3>
+		
+
+
+		
+		
+		<hr style="margin-top:100px;">
+		<h2>3) How Computers store Data</h2>
+		<h3>Computers are electronic devices, they work by controlling the flow of electricity.
+		<br>So, how do they store Data? The answer is binary, a number system with only two digits (0 and 1).</h3>
+		<h3>In the context of Computers :</h3>
+		<ul>
+			<li><h4 style="padding:0;">A High-Voltage signal means 1</h4></li>
+			<li><h4 style="padding:0;">A Low-Voltage signal means 0</h4></li>
+		</ul>
+		<h3>Each High and Low Voltage is stored into Memory using Transistors*</h3>
+		<h3>For example, we can assign the following combinations of 0's and 1's as:</h3>
+		<ul>
+			<li><h4 style="padding:0;">1001000 -> H</h4></li>
+			<li><h4 style="padding:0;">1100101 -> e</h4></li>
+			<li><h4 style="padding:0;">1101100 -> l</h4></li>
+			<li><h4 style="padding:0;">1101100 -> l</h4></li>
+			<li><h4 style="padding:0;">1101111 -> o</h4></li>
+		</ul>
+		<h4>To store the word 'Hello' into Memory, using High and Low Voltages (Binary).</h4>
+		
+		<h3>The above Binary combinations are according to the ASCII encoding system.
+		<br>There are other standards as well, such as UTF-8, Unicode, etc.</h3>
+		
+		<div class="example">
+		<h4>A single (1 or 0) is called a Bit.
+		<br>8 bits make a Byte.
+		<br>1024 bytes make a MegaByte
+		<br>1024 megabytes make a GigaByte
+		<br>and so on.</h4>
+		</div>
+
+		
+
+
+
+		<hr style="margin-top:100px;">
+		<h2>4) Programming Languages</h2>
+		<h3>Programming Languages allow you to execute instructions, by writing code in a human-readable format, without having to worry about the underlying complicated process.</h3>
+		<h3>Programming Languages are commonly classified as :</h3>
+		<ol>
+			<li><h4 style="padding:0;">Compiled :</h4></li>
+			<h4>Like C, C++, C#, Go, Fortran, Swift, etc</h4>
+
+			<li><h4 style="padding:0;">Interpreted</h4></li>
+			<h4>Like Python, JavaScript, R, Ruby, etc</h4>
+
+		</ol>
+		<h4 style="color:var(--sec);">( Although theoretically, any language can be Compiled or Interpreted or both )</h4>
+
+		<h3>The main difference being that :
+		<br>Compiled Languages are translated/compiled into Binary code.
+		<br>Interpreted Languages run directly on a program, called an Interpreter.</h3>
+
+		<h4 style="color:var(--sec);">( Compiled Languages are usually significantly faster than Interpreted ones )</h4>
+		
+
+
+
+
+		
+
+		 <hr style="margin-top:100px;">
+		<h1>Coding Tips</h1>
+		<h4 style="color:var(--sec);">( Assuming that you know some basic programming concepts )</h4>
+		<ol>
+			<li><h4 style="padding:0;">If a bunch of lines work together to perform a task, make it a Function.</h4></li>
+			<li><h4 style="padding:0;">Each Function should exist to only do 1 thing, and not multiple.</h4></li>
+			<li><h4 style="padding:0;">Your syntax should have sufficient indentation, 1-Tab for every Function, Class, Loop, and If Statement.</h4></li>
+			<li><h4 style="padding:0;">The Name of your Variables, Functions, and Classes should be self-explanatory.</h4></li>
+			<li><h4 style="padding:0;">If your code is getting too long(>200 lines), try dividing it into multiple files if you can.</h4></li>
+			<li><h4 style="padding:0;">Prompts given to the user for input should be clear and to the point.</h4></li>
+			<li><h4 style="padding:0;">Consider every single invalid value while taking Inputs from the user.</h4></li>
+			<li><h4 style="padding:0;">Never look at answers for coding questions on Quora.</h4></li>
+			<li><h4 style="padding:0;">Memorizing Syntax doesn't make you a better programmer, your problem-solving skills do.</h4></li>
+		</ol>
+
+		<h4 style="padding:0;">Programming is a process that takes time and effort, a CS project can take anywhere between a Day and a Year, sometimes even longer.<br> Most if not all Large Open-Source projects started out as a personal endeavor. So be patient, keep coding, and never abandon your projects.</h4>
+
+	</section>
+  </body>
+</html>
